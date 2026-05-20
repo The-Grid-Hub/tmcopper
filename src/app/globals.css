@@ -220,3 +220,10 @@
     background: var(--tmc-cyan-dark);
   }
 }
+
+.logo {
+  width: 88%;          /* fills sidebar width with breathing room */
+  height: auto;
+  display: block;
+  margin: 0 auto 40px; /* centred, with space before nav links */
+}

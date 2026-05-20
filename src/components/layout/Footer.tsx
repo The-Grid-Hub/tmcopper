@@ -17,8 +17,8 @@ export default function Footer() {
 
           {/* Col 1: About */}
           <div>
-            <div className="relative w-[120px] h-[44px] mb-5">
-              <Image src="/images/logo.png" alt="TM Copper Limited" fill className="object-contain object-left" />
+            <div className="relative w-[180px] h-[66px] mb-5">
+              <Image src="/images/logo_white.png" alt="TM Copper Limited" fill className="object-contain object-left " />
             </div>
             <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.62)' }}>
               TM Copper Limited — Pipeline Right-of-Way Erosion Control &amp; Infrastructure Protection Specialists.
