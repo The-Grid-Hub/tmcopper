@@ -1,37 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TM Copper Limited — Marketing Website
+
+Single-page marketing site for **TM Copper Limited**, a specialist engineering firm focused on pipeline right-of-way erosion control in the Niger Delta, Nigeria.
+
+## About
+
+TM Copper provides engineering services to oil & gas operators across challenging swamp and riverine terrain in the Niger Delta. The site targets B2B clients — NNPC, Chevron Nigeria, Seplat Energy, Oando, Renaissance Africa Energy, and government infrastructure agencies.
+
+**Core service disciplines:**
+- Pipeline ROW erosion control (gully remediation, slope stabilization, pipeline exposure prevention)
+- Civil & geotechnical engineering (gabion walls, riprap, geotextiles, sheet piling, drainage)
+- Swamp & riverine engineering (canal stabilization, mangrove protection, creek crossings)
+- Environmental protection & compliance (NUPRC, NOSDRA, FMEnv)
+- Emergency washout repairs
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Contact form:** Resend SDK
+- **Fonts:** Outfit (headings) + DM Sans (body) via `next/font`
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # Production build (runs TypeScript + ESLint checks)
+npm run lint     # ESLint only
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+There are no tests configured. `npm run build` is the primary correctness check.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the project root:
 
-## Learn More
+```env
+RESEND_API_KEY=your_resend_api_key
+CONTACT_TO_EMAIL=info@tmcopperltd.com   # optional, defaults to this value
+```
 
-To learn more about Next.js, take a look at the following resources:
+Without `RESEND_API_KEY`, contact form submissions are logged server-side (safe for development).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+  app/
+    page.tsx              # Root page — composes all 11 sections in order
+    layout.tsx            # Font loading, metadata
+    api/contact/          # Contact form POST endpoint (Resend)
+  components/
+    sections/             # Hero, About, Vision, Services, Stats, Projects,
+                          # Features, HSSE, Technology, Quality, Contacts
+    layout/               # Header, Footer
+  lib/
+    constants.ts          # All site copy and content (single source of truth)
+  hooks/                  # Custom React hooks
+```
 
-## Deploy on Vercel
+## Editing Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# jdwaters
+All text copy, nav links, service descriptions, stats, project bullets, and contact details live in [`src/lib/constants.ts`](src/lib/constants.ts). Edit there — never hardcode strings inside components.
