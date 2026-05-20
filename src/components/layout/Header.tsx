@@ -32,8 +32,8 @@ export default function Header() {
     <header
       className="sticky top-0 z-[1000] transition-shadow duration-300"
       style={{
-        background: 'linear-gradient(135deg, #0D2040 0%, #1B3668 100%)',
-        boxShadow: scrolled ? '0 2px 24px rgba(13,32,64,0.22)' : 'none',
+        background: 'linear-gradient(135deg, #091B3D 0%, #122E70 100%)',
+        boxShadow: scrolled ? '0 2px 24px rgba(9,27,61,0.28)' : 'none',
       }}
       role="banner"
     >
@@ -45,13 +45,13 @@ export default function Header() {
         <div className="content-wrap flex items-center justify-between h-[72px]">
 
           {/* Logo */}
-          <a href="#hero" className="flex items-center gap-3 no-underline flex-shrink-0" aria-label="JD Waters Energy">
-            <div className="relative w-[120px] h-[44px]">
+          <a href="#hero" className="flex items-center gap-3 no-underline flex-shrink-0" aria-label="TM Copper Limited">
+            <div className="relative w-[56px] h-[56px]">
               <Image
-                src="/images/logo-white.png"
-                alt="JD Waters Energy"
+                src="/images/logo_white.png"
+                alt="TM Copper Limited"
                 fill
-                className="object-contain object-left"
+                className="object-contain"
                 priority
               />
             </div>
@@ -65,7 +65,7 @@ export default function Header() {
                 href={link.href}
                 className="font-heading text-[0.82rem] font-semibold tracking-[0.06em] uppercase no-underline transition-colors duration-300"
                 style={{ color: 'rgba(255,255,255,0.82)' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#17A8CE')}
+                onMouseEnter={e => (e.currentTarget.style.color = '#1A52C8')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.82)')}
               >
                 {link.label}
@@ -80,7 +80,7 @@ export default function Header() {
               className="hidden xl:inline-block btn btn-amber"
               style={{ padding: '10px 22px', fontSize: '0.78rem' }}
             >
-              Get a Quote
+              Get in Touch
             </a>
 
             <button
@@ -133,7 +133,7 @@ export default function Header() {
               onClick={handleNavClick}
               className="btn btn-amber btn-lg mt-4 text-center"
             >
-              Get a Quote
+              Get in Touch
             </a>
           </div>
         </div>

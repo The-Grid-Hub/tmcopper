@@ -47,7 +47,7 @@ export default function Contacts() {
       {/* Overlay */}
       <div
         className="absolute inset-0 z-0"
-        style={{ background: 'rgba(13,32,64,0.90)' }}
+        style={{ background: 'rgba(9,27,61,0.90)' }}
         role="presentation"
       />
 
@@ -55,10 +55,10 @@ export default function Contacts() {
 
         <div className="section-header">
           <span className="section-label">Reach Us</span>
-          <h2 className="section-title text-white">Contact JD Waters Energy</h2>
+          <h2 className="section-title text-white">Contact TM Copper Limited</h2>
           <p className="section-desc">
-            Have a project in mind or want to explore a partnership? Fill in the form and our team will
-            respond within one business day.
+            Have a pipeline protection project or want to explore a partnership? Fill in the form and
+            our team will respond within one business day.
           </p>
           <div className="section-divider" />
         </div>
@@ -70,21 +70,21 @@ export default function Contacts() {
             <h3 className="font-heading font-bold text-white text-xl mb-7">Our Details</h3>
 
             <div className="contact-detail-item">
-              <span className="contact-detail-label">Address</span>
+              <span className="contact-detail-label">Head Office</span>
               <span className="contact-detail-value">
-                38, Jesus Street, Off Eneka Road,<br />
-                Obio-Akpor, Rivers State, Nigeria
+                26, Boskel Road, Off Aba Road,<br />
+                Port Harcourt, Rivers State, Nigeria
               </span>
             </div>
 
-            {/* <div className="contact-detail-item">
+            <div className="contact-detail-item">
               <span className="contact-detail-label">Phone</span>
               <span className="contact-detail-value">
-                <a href={CONTACT.phoneHref} className="hover:text-cyan transition-colors no-underline" style={{ color: 'rgba(255,255,255,0.78)' }}>
+                <a href={`tel:${CONTACT.phone}`} className="hover:text-cyan transition-colors no-underline" style={{ color: 'rgba(255,255,255,0.78)' }}>
                   {CONTACT.phone}
                 </a>
               </span>
-            </div> */}
+            </div>
 
             <div className="contact-detail-item">
               <span className="contact-detail-label">Email</span>
@@ -95,15 +95,15 @@ export default function Contacts() {
               </span>
             </div>
 
-            {/* <div className="contact-detail-item">
+            <div className="contact-detail-item">
               <span className="contact-detail-label">Website</span>
               <span className="contact-detail-value">
                 <a href={`https://${CONTACT.website}`} target="_blank" rel="noopener noreferrer"
-                  className="no-underline" style={{ color: '#17A8CE' }}>
+                  className="no-underline" style={{ color: '#1A52C8' }}>
                   {CONTACT.website}
                 </a>
               </span>
-            </div> */}
+            </div>
 
             <div className="contact-detail-item">
               <span className="contact-detail-label">Business Hours</span>
@@ -166,7 +166,7 @@ export default function Contacts() {
                   required
                   value={form.subject}
                   onChange={handleChange}
-                  placeholder="e.g. EPC Project Enquiry"
+                  placeholder="e.g. Pipeline Erosion Control Enquiry"
                   className="contact-input"
                 />
               </div>
@@ -180,7 +180,7 @@ export default function Contacts() {
                   required
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your project or enquiry..."
+                  placeholder="Tell us about your pipeline protection project or enquiry..."
                   className="contact-input resize-none"
                 />
               </div>
@@ -195,12 +195,12 @@ export default function Contacts() {
               </button>
 
               {status === 'success' && (
-                <p className="text-sm text-center py-2" style={{ color: '#17A8CE' }}>
+                <p className="text-sm text-center py-2" style={{ color: '#1A52C8' }}>
                   ✓ Thank you! Your message has been sent. We&apos;ll be in touch within one business day.
                 </p>
               )}
               {status === 'error' && (
-                <p className="text-sm text-center py-2" style={{ color: '#F5A623' }}>
+                <p className="text-sm text-center py-2" style={{ color: '#E8610A' }}>
                   Something went wrong. Please try again or email us directly at {CONTACT.email}.
                 </p>
               )}

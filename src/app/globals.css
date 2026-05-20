@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --jdw-navy:        #0D2040;
-  --jdw-navy2:       #162B52;
-  --jdw-navy3:       #1B3668;
-  --jdw-cyan:        #17A8CE;
-  --jdw-cyan-dark:   #0F8BAA;
-  --jdw-amber:       #F5A623;
-  --jdw-amber-dark:  #D88E0F;
-  --jdw-bg:          #F7F9FC;
-  --jdw-border:      #E0E7EF;
-  --jdw-text:        #1A2840;
-  --jdw-text-light:  #5A6B82;
-  --jdw-text-muted:  #8A9BB4;
-  --jdw-radius:      6px;
-  --jdw-radius-lg:   12px;
-  --jdw-transition:  0.3s ease;
+  --tmc-navy:        #091B3D;
+  --tmc-navy2:       #0D2456;
+  --tmc-navy3:       #122E70;
+  --tmc-cyan:        #1A52C8;
+  --tmc-cyan-dark:   #1242A8;
+  --tmc-amber:       #E8610A;
+  --tmc-amber-dark:  #C84E06;
+  --tmc-bg:          #F5F7FA;
+  --tmc-border:      #DCE4EE;
+  --tmc-text:        #181F2E;
+  --tmc-text-light:  #4A5C75;
+  --tmc-text-muted:  #7A8BA2;
+  --tmc-radius:      6px;
+  --tmc-radius-lg:   12px;
+  --tmc-transition:  0.3s ease;
 }
 
 @layer base {
@@ -54,7 +54,7 @@
 
   /* Section variants */
   .fp-section-dark {
-    background: linear-gradient(135deg, #0D2040 0%, #1B3668 100%);
+    background: linear-gradient(135deg, #091B3D 0%, #122E70 100%);
     color: rgba(255, 255, 255, 0.88);
   }
   .fp-section-navy2 {
@@ -82,7 +82,7 @@
   }
   .section-desc-dark {
     @apply text-[1.05rem] leading-relaxed;
-    color: var(--jdw-text-light);
+    color: var(--tmc-text-light);
   }
   .section-header {
     @apply text-center mb-[52px];
@@ -91,7 +91,7 @@
     display: block;
     width: 50px;
     height: 3px;
-    background: var(--jdw-cyan);
+    background: var(--tmc-cyan);
     border: none;
     margin: 20px auto 0;
   }
@@ -110,10 +110,10 @@
     @apply bg-cyan-dark border-cyan-dark -translate-y-0.5;
   }
   .btn-amber {
-    @apply bg-amber border-amber text-navy;
+    @apply bg-amber border-amber text-white;
   }
   .btn-amber:hover {
-    @apply bg-amber-dark border-amber-dark text-navy;
+    @apply bg-amber-dark border-amber-dark text-white;
   }
   .btn-outline {
     background: transparent;
@@ -131,8 +131,8 @@
   /* Service card */
   .service-card {
     @apply bg-white rounded-xl p-8 transition-all duration-300;
-    border: 1px solid var(--jdw-border);
-    border-top: 3px solid var(--jdw-cyan);
+    border: 1px solid var(--tmc-border);
+    border-top: 3px solid var(--tmc-cyan);
   }
   .service-card:hover {
     @apply shadow-xl -translate-y-1;
@@ -141,7 +141,7 @@
   /* Project bullet item */
   .project-bullet {
     @apply w-2 h-2 rounded-full flex-shrink-0 mt-2;
-    background: var(--jdw-cyan);
+    background: var(--tmc-cyan);
   }
 
   /* Contact form inputs */
@@ -155,8 +155,8 @@
     color: rgba(255, 255, 255, 0.4);
   }
   .contact-input:focus {
-    border-color: var(--jdw-cyan);
-    box-shadow: 0 0 0 3px rgba(23, 168, 206, 0.15);
+    border-color: var(--tmc-cyan);
+    box-shadow: 0 0 0 3px rgba(26, 82, 200, 0.18);
   }
   .contact-label {
     @apply block text-sm font-heading font-medium mb-2;
@@ -167,7 +167,7 @@
   .hsse-card {
     @apply rounded-lg p-8 transition-all duration-300;
     background: rgba(255, 255, 255, 0.06);
-    border-bottom: 3px solid var(--jdw-amber);
+    border-bottom: 3px solid var(--tmc-amber);
   }
 
   /* Styled list */
@@ -188,7 +188,7 @@
   }
   .contact-detail-label {
     @apply text-xs font-heading font-bold tracking-[0.15em] uppercase;
-    color: var(--jdw-cyan);
+    color: var(--tmc-cyan);
   }
   .contact-detail-value {
     @apply text-[0.95rem];
@@ -204,19 +204,19 @@
     color: rgba(255, 255, 255, 0.82);
   }
   .client-tag:hover {
-    background: rgba(23, 168, 206, 0.15);
-    border-color: rgba(23, 168, 206, 0.4);
-    color: var(--jdw-cyan);
+    background: rgba(26, 82, 200, 0.15);
+    border-color: rgba(26, 82, 200, 0.4);
+    color: var(--tmc-cyan);
   }
 
   /* Back to top */
   .back-to-top {
     @apply fixed bottom-8 right-8 w-11 h-11 rounded-full flex items-center justify-center
            text-white text-lg transition-all duration-300 cursor-pointer z-[900];
-    background: var(--jdw-cyan);
+    background: var(--tmc-cyan);
   }
   .back-to-top:hover {
     @apply -translate-y-1;
-    background: var(--jdw-cyan-dark);
+    background: var(--tmc-cyan-dark);
   }
 }

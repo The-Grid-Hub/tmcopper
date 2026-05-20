@@ -26,7 +26,7 @@ export default function HSSE() {
       {/* Overlay */}
       <div
         className="absolute inset-0 z-0"
-        style={{ background: 'rgba(13,32,64,0.88)' }}
+        style={{ background: 'rgba(9,27,61,0.88)' }}
         role="presentation"
       />
 
@@ -35,11 +35,11 @@ export default function HSSE() {
         <div className="section-header">
           <span className="section-label">Safety, Health &amp; Environment</span>
           <h2 className="section-title text-white">
-            Health, Safety, Security &amp; Environment (HSSE)
+            Health, Safety &amp; Environment (HSE) Policy
           </h2>
           <p className="section-desc">
-            JD Waters Energy operates under strict HSSE standards aligned with international best practices.
-            Safety, environmental stewardship, and operational integrity remain central to all our activities.
+            TM Copper Limited operates under a clear commitment: Zero Harm | Zero Spills | Zero Community
+            Disruption. Safety and environmental stewardship are fundamental to every project we undertake.
           </p>
           <div className="section-divider" />
         </div>

@@ -15,8 +15,8 @@ export async function POST(req: NextRequest) {
       const { Resend } = await import('resend')
       const resend = new Resend(apiKey)
       await resend.emails.send({
-        from: 'JD Waters Website <noreply@jdwaters.org>',
-        to: [process.env.CONTACT_TO_EMAIL ?? 'info@jdwaters.org'],
+        from: 'TM Copper Website <noreply@tmcopperltd.com>',
+        to: [process.env.CONTACT_TO_EMAIL ?? 'info@tmcopperltd.com'],
         replyTo: email,
         subject: `Website Enquiry: ${subject}`,
         html: `

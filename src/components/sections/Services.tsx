@@ -21,8 +21,8 @@ export default function Services() {
           <span className="section-label">What We Do</span>
           <h2 className="section-title text-white">Core Services</h2>
           <p className="section-desc">
-            JD Waters Energy provides integrated services across the full lifecycle of oilfield and
-            energy development — from concept to production.
+            TM Copper Limited provides specialised engineering services focused exclusively on the
+            protection, stabilisation, and resilience of pipeline right-of-way corridors.
           </p>
           <div className="section-divider" />
         </div>

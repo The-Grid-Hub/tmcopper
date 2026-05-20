@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Outfit, DM_Sans } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
@@ -19,38 +19,42 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
+export const viewport: Viewport = {
+  themeColor: '#091B3D',
+}
+
 export const metadata: Metadata = {
-  title: 'JD Waters Energy Limited | Integrated Oilfield Development & Energy Services',
+  title: 'TM Copper Limited | Pipeline ROW Erosion Control & Infrastructure Protection',
   description:
-    'JD Waters Energy Limited delivers technically sound, cost-efficient, and sustainable energy projects across the upstream and midstream value chain — from field development planning to production operations.',
+    'TM Copper Limited is a specialised indigenous oil and gas engineering company dedicated to the protection, stabilisation, and preservation of pipeline right-of-way corridors through advanced erosion control engineering and environmental infrastructure solutions.',
   keywords: [
-    'oilfield development',
-    'energy services',
-    'EPC',
-    'drilling',
-    'Nigeria',
-    'JD Waters Energy',
-    'field development planning',
-    'production operations',
+    'pipeline erosion control',
+    'right-of-way protection',
+    'terrain stabilisation',
+    'flood mitigation',
+    'civil geotechnical engineering',
+    'Niger Delta',
+    'TM Copper Limited',
+    'pipeline infrastructure protection',
+    'swamp riverine engineering',
   ],
   icons: {
     icon: '/images/logo.png',
     apple: '/images/logo.png',
     shortcut: '/images/logo.png',
   },
-  themeColor: '#0D2040',
   openGraph: {
-    title: 'JD Waters Energy Limited | Integrated Oilfield Development & Energy Services',
+    title: 'TM Copper Limited | Pipeline ROW Erosion Control & Infrastructure Protection',
     description:
-      'JD Waters Energy Limited delivers technically sound, cost-efficient, and sustainable energy projects across the upstream and midstream value chain — from field development planning to production operations.',
-    url: 'https://jdwaters.org',
-    siteName: 'JD Waters Energy Limited',
+      'TM Copper Limited delivers specialised engineering solutions that improve infrastructure durability, operational continuity, environmental resilience, and regulatory compliance across pipeline right-of-way corridors.',
+    url: 'https://www.tmcopperltd.com',
+    siteName: 'TM Copper Limited',
     images: [
       {
         url: '/images/logo.png',
         width: 300,
         height: 180,
-        alt: 'JD Waters Energy Limited',
+        alt: 'TM Copper Limited',
       },
     ],
     locale: 'en_NG',
@@ -58,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'JD Waters Energy Limited',
+    title: 'TM Copper Limited',
     description:
-      'Integrated oilfield development and energy services — field development planning, EPC, drilling, production operations, and project management.',
+      'Pipeline right-of-way erosion control & infrastructure protection specialists — protecting pipeline corridors, preserving critical infrastructure.',
     images: ['/images/logo.png'],
   },
 }

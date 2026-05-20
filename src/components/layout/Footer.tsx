@@ -10,7 +10,7 @@ const SOCIAL = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: 'linear-gradient(135deg, #0D2040 0%, #162B52 100%)' }}>
+    <footer style={{ background: 'linear-gradient(135deg, #091B3D 0%, #0D2456 100%)' }}>
       {/* Main footer columns */}
       <div className="content-wrap py-[70px]">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
@@ -18,11 +18,13 @@ export default function Footer() {
           {/* Col 1: About */}
           <div>
             <div className="relative w-[120px] h-[44px] mb-5">
-              <Image src="/images/logo-white.png" alt="JD Waters Energy" fill className="object-contain object-left" />
+              <Image src="/images/logo.png" alt="TM Copper Limited" fill className="object-contain object-left" />
             </div>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgba(255,255,255,0.62)' }}>
-              JD Waters Energy Limited is a fully integrated oilfield development and energy services company
-              delivering technically sound, cost-efficient, and sustainable energy projects.
+            <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.62)' }}>
+              TM Copper Limited — Pipeline Right-of-Way Erosion Control &amp; Infrastructure Protection Specialists.
+            </p>
+            <p className="text-xs mb-5" style={{ color: 'rgba(255,255,255,0.45)', fontStyle: 'italic' }}>
+              Protecting Pipeline Corridors. Preserving Critical Infrastructure.
             </p>
             <div className="flex gap-2 flex-wrap">
               {SOCIAL.map(s => (
@@ -33,7 +35,7 @@ export default function Footer() {
                   className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold font-heading uppercase no-underline transition-all duration-300"
                   style={{ background: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.7)' }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.background = '#17A8CE'
+                    e.currentTarget.style.background = '#1A52C8'
                     e.currentTarget.style.color = '#fff'
                   }}
                   onMouseLeave={e => {
@@ -49,7 +51,7 @@ export default function Footer() {
 
           {/* Col 2: Services */}
           <div>
-            <h4 className="text-white font-heading font-bold text-sm tracking-[0.12em] uppercase mb-5">Core Services</h4>
+            <h4 className="text-white font-heading font-bold text-sm tracking-[0.12em] uppercase mb-5">Our Services</h4>
             <ul className="space-y-3">
               {FOOTER_SERVICES.map(s => (
                 <li key={s.label}>
@@ -57,7 +59,7 @@ export default function Footer() {
                     href={s.href}
                     className="text-sm no-underline transition-colors duration-200"
                     style={{ color: 'rgba(255,255,255,0.62)' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#17A8CE')}
+                    onMouseEnter={e => (e.currentTarget.style.color = '#1A52C8')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.62)')}
                   >
                     {s.label}
@@ -77,7 +79,7 @@ export default function Footer() {
                     href={c.href}
                     className="text-sm no-underline transition-colors duration-200"
                     style={{ color: 'rgba(255,255,255,0.62)' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#17A8CE')}
+                    onMouseEnter={e => (e.currentTarget.style.color = '#1A52C8')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.62)')}
                   >
                     {c.label}
@@ -92,23 +94,23 @@ export default function Footer() {
             <h4 className="text-white font-heading font-bold text-sm tracking-[0.12em] uppercase mb-5">Contact Info</h4>
             <ul className="space-y-4">
               <li className="text-sm leading-snug" style={{ color: 'rgba(255,255,255,0.62)' }}>
-                <span className="block text-[#17A8CE] text-xs font-bold uppercase tracking-wider mb-1">Address</span>
+                <span className="block text-[#1A52C8] text-xs font-bold uppercase tracking-wider mb-1">Address</span>
                 {CONTACT.address}
               </li>
-              {/* <li className="text-sm" style={{ color: 'rgba(255,255,255,0.62)' }}>
-                <span className="block text-[#17A8CE] text-xs font-bold uppercase tracking-wider mb-1">Phone</span>
-                <a href={CONTACT.phoneHref} className="no-underline hover:text-[#17A8CE] transition-colors" style={{ color: 'rgba(255,255,255,0.62)' }}>
+              <li className="text-sm" style={{ color: 'rgba(255,255,255,0.62)' }}>
+                <span className="block text-[#1A52C8] text-xs font-bold uppercase tracking-wider mb-1">Phone</span>
+                <a href={`tel:${CONTACT.phone}`} className="no-underline hover:text-[#1A52C8] transition-colors" style={{ color: 'rgba(255,255,255,0.62)' }}>
                   {CONTACT.phone}
                 </a>
-              </li> */}
+              </li>
               <li className="text-sm" style={{ color: 'rgba(255,255,255,0.62)' }}>
-                <span className="block text-[#17A8CE] text-xs font-bold uppercase tracking-wider mb-1">Email</span>
-                <a href={`mailto:${CONTACT.email}`} className="no-underline hover:text-[#17A8CE] transition-colors" style={{ color: 'rgba(255,255,255,0.62)' }}>
+                <span className="block text-[#1A52C8] text-xs font-bold uppercase tracking-wider mb-1">Email</span>
+                <a href={`mailto:${CONTACT.email}`} className="no-underline hover:text-[#1A52C8] transition-colors" style={{ color: 'rgba(255,255,255,0.62)' }}>
                   {CONTACT.email}
                 </a>
               </li>
               <li className="text-sm" style={{ color: 'rgba(255,255,255,0.62)' }}>
-                <span className="block text-[#17A8CE] text-xs font-bold uppercase tracking-wider mb-1">Hours</span>
+                <span className="block text-[#1A52C8] text-xs font-bold uppercase tracking-wider mb-1">Hours</span>
                 {CONTACT.hours}
               </li>
             </ul>
@@ -120,7 +122,7 @@ export default function Footer() {
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
         <div className="content-wrap py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs" style={{ color: 'rgba(255,255,255,0.45)' }}>
-            &copy; {new Date().getFullYear()} JD Waters Energy Limited. All rights reserved.
+            &copy; {new Date().getFullYear()} TM Copper Limited. All rights reserved.
           </p>
           <div className="flex gap-5">
             {NAV_LINKS.slice(0, 4).map(link => (
@@ -129,7 +131,7 @@ export default function Footer() {
                 href={link.href}
                 className="text-xs font-heading uppercase tracking-wider no-underline transition-colors duration-200"
                 style={{ color: 'rgba(255,255,255,0.45)' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#17A8CE')}
+                onMouseEnter={e => (e.currentTarget.style.color = '#1A52C8')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.45)')}
               >
                 {link.label}

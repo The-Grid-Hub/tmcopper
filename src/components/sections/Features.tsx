@@ -21,7 +21,7 @@ export default function Features() {
           <span className="section-label">Why Choose Us</span>
           <h2 className="section-title text-white">Competitive Advantages</h2>
           <p className="section-desc">
-            What sets JD Waters Energy apart in the oilfield services and energy development market.
+            What sets TM Copper Limited apart as a specialist pipeline right-of-way erosion control company.
           </p>
           <div className="section-divider" />
         </div>
@@ -42,7 +42,7 @@ export default function Features() {
             >
               <span
                 className="font-heading font-bold text-3xl flex-shrink-0 leading-none"
-                style={{ color: 'rgba(23,168,206,0.35)' }}
+                style={{ color: 'rgba(26,82,200,0.35)' }}
               >
                 {String(i + 1).padStart(2, '0')}
               </span>

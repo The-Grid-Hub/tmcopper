@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Overlay */}
       <div
         className="absolute inset-0 z-[1]"
-        style={{ background: 'linear-gradient(105deg, rgba(13,32,64,0.9) 0%, rgba(27,54,104,0.65) 100%)' }}
+        style={{ background: 'linear-gradient(105deg, rgba(9,27,61,0.9) 0%, rgba(18,46,112,0.65) 100%)' }}
         role="presentation"
       />
 
@@ -33,25 +33,25 @@ export default function Hero() {
             className="section-label mb-5"
             style={{ color: 'rgba(255,255,255,0.72)', letterSpacing: '0.2em' }}
           >
-            Integrated Oilfield Development &amp; Energy Services
+            Engineering Resilience for Critical Pipeline Infrastructure
           </p>
 
           <h1
             className="font-heading font-bold text-white leading-[1.08] mb-6"
             style={{ fontSize: 'clamp(2.2rem, 5vw, 3.8rem)' }}
           >
-            Advancing Innovation,<br />
-            <span style={{ color: '#17A8CE' }}>Powering Energy</span>
-            <span style={{ color: '#F5A623' }}> Solutions</span>
+            Protecting Pipeline Corridors.<br />
+            <span style={{ color: '#1A52C8' }}>Preserving Critical</span>
+            <span style={{ color: '#E8610A' }}> Infrastructure.</span>
           </h1>
 
           <p
             className="text-[1.05rem] leading-[1.8] mb-10 max-w-[580px]"
             style={{ color: 'rgba(255,255,255,0.78)' }}
           >
-            JD Waters Energy Limited delivers technically sound, cost-efficient, and sustainable energy
-            projects across the upstream and midstream value chain — from field development planning to
-            production operations.
+            TM Copper Limited is a specialised indigenous engineering company dedicated to the protection,
+            stabilisation, and preservation of pipeline right-of-way corridors through advanced erosion
+            control engineering and terrain-responsive solutions.
           </p>
 
           <div className="flex flex-wrap gap-4">

@@ -7,15 +7,15 @@ export default function Projects() {
       <div className="content-wrap">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-14">
 
-          {/* Left: Key Projects */}
+          {/* Left: Flagship Project Types */}
           <div>
-            <span className="section-label">Track Record</span>
-            <h2 className="section-title text-white">Key Projects &amp; Experience</h2>
+            <span className="section-label">Flagship Programmes</span>
+            <h2 className="section-title text-white">Project Types &amp; Capabilities</h2>
             <div className="section-divider section-divider-left mb-7" />
 
             <p className="text-sm leading-relaxed mb-7" style={{ color: 'rgba(255,255,255,0.65)' }}>
-              JD Waters Energy has developed a strong execution track record across energy projects spanning
-              oilfield development, construction, and well services.
+              TM Copper Limited delivers specialist engineering interventions designed to address real-world
+              erosion threats affecting pipeline corridors across complex Niger Delta terrain.
             </p>
 
             <div className="space-y-4">
@@ -30,13 +30,13 @@ export default function Projects() {
 
           {/* Right: Clients */}
           <div>
-            <span className="section-label">Who We Work With</span>
-            <h2 className="section-title text-white">Clients &amp; Partnerships</h2>
+            <span className="section-label">Industries We Serve</span>
+            <h2 className="section-title text-white">Clients &amp; Target Sectors</h2>
             <div className="section-divider section-divider-left mb-7" />
 
             <p className="text-sm leading-relaxed mb-7" style={{ color: 'rgba(255,255,255,0.65)' }}>
-              We collaborate with a broad range of stakeholders within the energy sector, leveraging advanced
-              technologies and integrated delivery models to execute complex projects efficiently.
+              TM Copper Limited is strategically positioned to support organisations operating within oil and
+              gas infrastructure environments across Nigeria and West Africa.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
@@ -48,7 +48,7 @@ export default function Projects() {
             <div className="relative rounded-xl overflow-hidden" style={{ height: '200px' }}>
               <Image
                 src="/images/projects-img.jpg"
-                alt="Oil platform operations"
+                alt="Pipeline infrastructure operations"
                 fill
                 className="object-cover"
                 loading="lazy"

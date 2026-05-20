@@ -9,14 +9,15 @@ export default function Technology() {
 
           {/* Left: Tech content */}
           <div>
-            <span className="section-label">Digital &amp; Innovation</span>
-            <h2 className="section-title text-text">Technology &amp; Innovation</h2>
+            <span className="section-label">Technical Advantage</span>
+            <h2 className="section-title text-text">Advanced Survey &amp; Diagnostics</h2>
             <div className="section-divider section-divider-left mb-6" />
 
             <p className="text-text-light mb-6">
-              We leverage modern technologies to enhance operational performance and project delivery.
-              Our innovation strategy focuses on improving efficiency, reducing costs, and enhancing
-              decision-making across operations.
+              TM Copper Limited deploys modern engineering tools and technologies to improve planning
+              accuracy, reduce execution risk, and strengthen infrastructure resilience. We recognise
+              that no two erosion problems are identical — every intervention is based on terrain behaviour,
+              hydrological conditions, soil stability, and infrastructure exposure risk.
             </p>
 
             <div className="space-y-4">
@@ -24,7 +25,7 @@ export default function Technology() {
                 <div key={item} className="flex gap-4 items-center">
                   <span
                     className="w-2 h-2 rounded-full flex-shrink-0"
-                    style={{ background: '#17A8CE' }}
+                    style={{ background: '#1A52C8' }}
                     aria-hidden="true"
                   />
                   <span className="text-text-light text-sm">{item}</span>
@@ -33,12 +34,12 @@ export default function Technology() {
             </div>
           </div>
 
-          {/* Right: Image + Sustainability box */}
+          {/* Right: Image + Future capability box */}
           <div className="space-y-7">
             <div className="relative rounded-xl overflow-hidden">
               <Image
                 src="/images/tech-img.jpg"
-                alt="Technology &amp; Innovation"
+                alt="Advanced Survey &amp; Diagnostics"
                 width={600}
                 height={380}
                 className="w-full h-auto object-cover"
@@ -46,17 +47,17 @@ export default function Technology() {
               />
             </div>
 
-            <div className="rounded-xl p-7" style={{ background: '#0D2040' }}>
-              <span className="section-label mb-2">Energy Transition</span>
+            <div className="rounded-xl p-7" style={{ background: '#091B3D' }}>
+              <span className="section-label mb-2">Future Capability</span>
               <h3 className="font-heading font-bold text-white text-base mb-4">
-                Sustainability &amp; Energy Transition
+                Expanding Technical Capabilities
               </h3>
               <ul className="space-y-3">
                 {SUSTAINABILITY_ITEMS.map(item => (
                   <li key={item} className="flex gap-3 items-start">
                     <span
                       className="text-sm flex-shrink-0 mt-0.5"
-                      style={{ color: '#17A8CE' }}
+                      style={{ color: '#1A52C8' }}
                       aria-hidden="true"
                     >
                       ▶
@@ -68,7 +69,8 @@ export default function Technology() {
                 ))}
               </ul>
               <p className="text-xs mt-4 mb-0" style={{ color: 'rgba(255,255,255,0.45)' }}>
-                We aim to balance energy demand with environmental responsibility.
+                By combining advanced diagnostics with terrain-specific engineering, we deliver more accurate
+                interventions and better infrastructure durability.
               </p>
             </div>
           </div>

@@ -37,7 +37,7 @@ function StatItem({ stat }: { stat: typeof STATS[0] }) {
     >
       <span
         className="font-heading font-bold block mb-2"
-        style={{ fontSize: 'clamp(2.2rem, 4vw, 3rem)', color: '#17A8CE' }}
+        style={{ fontSize: 'clamp(2.2rem, 4vw, 3rem)', color: '#1A52C8' }}
       >
         {stat.number !== null ? `${count}${stat.suffix ?? ''}` : stat.display}
       </span>
@@ -56,7 +56,7 @@ export default function Stats() {
     <div
       id="stats"
       className="flex flex-col xl:flex-row"
-      style={{ background: 'linear-gradient(90deg, #0D2040 0%, #1B3668 100%)' }}
+      style={{ background: 'linear-gradient(90deg, #091B3D 0%, #122E70 100%)' }}
     >
       {STATS.map(stat => (
         <StatItem key={stat.label} stat={stat} />
